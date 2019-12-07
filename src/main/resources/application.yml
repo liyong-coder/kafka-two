@@ -1,0 +1,36 @@
+spring:
+  zfkafka:
+    bootstrap-servers: 172.16.8.104:9092
+    consumer:
+      client-id: SZZF_COMMAND
+      group-id: SZZF_COMMAND_GROUP
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  clwkafka:
+    bootstrap-servers: 172.16.8.34:9092
+    consumer:
+      client-id: SZZF_COMMAND
+      group-id: SZZF_COMMAND_GROUP
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+
+         #kafka配置
+       #  kafka:
+       #    bootstrap-servers: 172.16.8.137:9092
+       #    consumer:
+       #      client-id: SZZF_COMMAND_${server.port}
+       #      group-id: SZZF_COMMAND_GROUP
+       #      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+       #      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+       #    producer:
+       #      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+       #      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
